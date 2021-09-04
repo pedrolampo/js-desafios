@@ -1,15 +1,38 @@
-let nombre = prompt('Ingrese su nombre');
+let numeroIngresado = prompt('Ingrese un número:');
+let numero = parseInt(numeroIngresado);
 
-console.log('¡Buenos días,' + ' ' + nombre + '!');
+if (numero < 10) {
+  alert('El número ingresado tiene 1 cifra.');
+  console.log('El número ingresado tiene 1 cifra.');
+} else if (numero < 100) {
+  alert('El número ingresado tiene 2 cifras.');
+  console.log('El número ingresado tiene 2 cifras.');
+} else if (numero < 1000) {
+  alert('El número ingresado tiene 3 cifras.');
+  console.log('El número ingresado tiene 3 cifras.');
+} else {
+  alert('El número ingresado tiene 4 cifras o más.');
+  console.log('El número ingresado tiene 4 cifras o más.');
+}
 
-let numGenerico = 4;
-let numFav = prompt('Ingresa tu número favorito');
-let numFav2 = parseInt(numFav);
+let txtIngresado = prompt('Escriba "Buenos días":');
 
-console.log(numGenerico + numFav2);
+if (txtIngresado === 'Buenos días') {
+  console.log('El usuario respetó la consigna.');
+} else {
+  console.log('El usuario no respetó la consigna.');
+}
 
-let randomText = prompt('Escriba una oración cualquiera');
-let randomText2 = prompt('Escriba otra oración');
-let fusionTxt = randomText + ' ' + randomText2;
+let numeroIngresado2 = prompt('Ingrese otro número:');
+let numero2 = parseInt(numeroIngresado2);
 
-alert(fusionTxt)
+if (numero2 < 50) {
+  alert('El número ingresado es menor a 50.');
+  console.log('El número ingresado es menor a 50.');
+} else if (numero2 > 100) {
+  alert('El número ingresado es mayor a 100.');
+  console.log('El número ingresado es mayor a 100.');
+} else {
+  alert('El número ingresado está entre 50 y 100.');
+  console.log('El número ingresado está entre 50 y 100.');
+}
