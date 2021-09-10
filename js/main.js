@@ -1,13 +1,12 @@
-let numeroIngresado = parseInt(prompt('Ingrese un número par:'));
+const diasDelMes = 30;
+let fechaActual = parseInt(prompt('Ingrese la fecha de hoy:'));
 
-let numPar = numeroIngresado % 2;
-
-switch (numPar) {
-  case 0:
-    console.log('Perfecto!');
-    break;
-
-  default:
-    console.log('El número ingresado no es par.');
-    break;
+for (let dias = 1; dias <= diasDelMes; dias++) {
+  if (dias < fechaActual) {
+    console.log('El día ' + dias + ' de Septiembre ya pasó.');
+  } else if (dias == fechaActual) {
+    console.log('Hoy es ' + dias + ' de Septiembre.');
+  } else {
+    console.log('Todavía no es ' + dias + ' de Septiembre.');
+  }
 }
